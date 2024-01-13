@@ -1,6 +1,6 @@
 import FirebaseCore
 
-public class FirebaseAuthKmp {
+public class FirebaseAuthKmpInitializer {
     
     public init() {}
     
