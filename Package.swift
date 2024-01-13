@@ -8,16 +8,24 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "firebase-kmp",
-            targets: ["firebase-kmp"]),
+            name: "FirebaseAuthKmp",
+            targets: ["FirebaseAuthKmp"]),
+    ],
+    dependencies: [
+        .package(
+            url: "https://github.com/firebase/firebase-ios-sdk.git", from: "10.19.0"),
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "firebase-kmp"),
-        .testTarget(
-            name: "firebase-kmpTests",
-            dependencies: ["firebase-kmp"]),
+            name: "FirebaseAuthKmp",
+            dependencies: [
+                .product(
+                    name: "FirebaseAuth",
+                    package: "firebase-ios-sdk"
+                ),
+            ],
+            path: "FirebaseAuthKmp/Sources",
+            publicHeadersPath: "Public"
+        ),
     ]
 )
