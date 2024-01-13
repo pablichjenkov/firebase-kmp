@@ -1,7 +1,7 @@
 import shared
 import FirebaseAuth
 
-public class FirebaseAuthKmpWrapper : MacaoFirebaseAccountSwiftAdapter {
+public class FirebaseAuthKmpWrapperImpl : MacaoFirebaseAuthKmpWrapper {
     
     public init(){}
     
