@@ -1,4 +1,4 @@
-import composeApp
+import ComposeApp
 import FirebaseAuth
 
 public class FirebaseAuthKmpWrapperImpl : MacaoFirebaseAuthKmpWrapper {
