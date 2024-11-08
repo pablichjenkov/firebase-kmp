@@ -1,7 +1,7 @@
 import ComposeApp
 import FirebaseAuth
 
-public class FirebaseAuthKmpWrapperImpl : MacaoFirebaseAuthKmpWrapper {
+public class FirebaseAuthKmpWrapperImpl : FirebaseAuthKmpSwiftWrapper {
     
     public init(){}
     
